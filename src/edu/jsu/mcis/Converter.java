@@ -68,7 +68,7 @@ public class Converter {
             Iterator<String[]> iterator = full.iterator();
             
             StringBuilder csvFile = new StringBuilder();
-            BufferedReader buffReader = new BufferedReader(new FileReader("input.csv"));
+            BufferedReader buffReader = new BufferedReader(new FileReader("grades.csv"));
             String line;
             while((line = buffReader.readLine()) != null){
                 csvFile.append(line).append('\n');
