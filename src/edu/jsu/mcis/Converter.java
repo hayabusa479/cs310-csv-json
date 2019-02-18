@@ -80,6 +80,9 @@ public class Converter {
                 System.out.println(field); 
             }
             
+            StringWriter writer = new StringWriter();
+            CSVWriter csvWriter = new CSVWriter(writer, ',', '"', '\n');
+            
         }        
         catch(Exception e) { return e.toString(); }
         
