@@ -67,8 +67,11 @@ public class Converter {
             List<String[]> full = reader.readAll();
             Iterator<String[]> iterator = full.iterator();
             
-            // INSERT YOUR CODE HERE
-            
+            BufferedReader buffReader = new BufferedReader(new FileReader("input.csv"));
+            String line;
+            while((line = buffReader.readLine()) != null){
+                csvFile.append(line).append('\n');
+            }
         }        
         catch(Exception e) { return e.toString(); }
         
