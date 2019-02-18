@@ -74,6 +74,12 @@ public class Converter {
                 csvFile.append(line).append('\n');
             }
             
+            String[] line = iterator.next();
+            
+            for (String field : line) {
+                System.out.println(field); 
+            }
+            
         }        
         catch(Exception e) { return e.toString(); }
         
