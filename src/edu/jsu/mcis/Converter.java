@@ -105,9 +105,10 @@ public class Converter {
             Iterator<String[]> iterator = full.iterator();
          
             JSONArray records = new JSONArray();
-            JSONObject jsonObject = new JSONObject();
+            LinkedHashMap<String, String> json_Object = new LinkedHashMap<>();
+            json_Object = new LinkedHashMap<>();
             String[] record;
-            String jsonString = "";
+            String json_String = "";
             
             while (iterator.hasNext()) { 
                  
@@ -122,6 +123,7 @@ public class Converter {
                 }
                  
                 records.add(jsonObject);
+                
             }
            
         }
