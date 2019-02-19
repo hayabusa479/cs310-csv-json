@@ -99,7 +99,30 @@ public class Converter {
             StringWriter writer = new StringWriter();
             CSVWriter csvWriter = new CSVWriter(writer, ',', '"', '\n');
             
-            // INSERT YOUR CODE HERE
+            JSONParser parser = new JSONParser();
+            JSONObject jsonObject = (JSONObject)parser.parse(jsonString);
+            List<String[]> full; 
+            Iterator<String[]> iterator = full.iterator();
+         
+            JSONArray records = new JSONArray();
+            JSONObject jsonObject = new JSONObject();
+            String[] record;
+            String jsonString = "";
+            
+            while (iterator.hasNext()) { 
+                 
+                record = iterator.next(); 
+                 
+                jsonObject = new JSONObject();
+                 
+                for (int i = 0; i < headings.length; ++i) {
+                
+                    jsonObject.put(headings[i], record[i]); 
+                 
+                }
+                 
+                records.add(jsonObject); // Add JSON object to JSONArray
+}
             
         }
         
