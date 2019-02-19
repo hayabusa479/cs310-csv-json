@@ -122,8 +122,8 @@ public class Converter {
                 }
                  
                 records.add(jsonObject); // Add JSON object to JSONArray
-}
-            
+            }
+           
         }
         
         catch(Exception e) { return e.toString(); }
