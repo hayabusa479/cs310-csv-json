@@ -121,7 +121,7 @@ public class Converter {
                  
                 }
                  
-                records.add(jsonObject); // Add JSON object to JSONArray
+                records.add(jsonObject);
             }
            
         }
